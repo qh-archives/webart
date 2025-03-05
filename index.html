@@ -1,13 +1,17 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testing-This</title>
-    <link rel="shortcut icon" href="[Orange_Snake.png]">
-    <meta charset="UTF-8"/>
+    <link rel="shortcut icon" href="Assets/Orange_Snake.png">
     <style>
         body {
             background-color: rgb(255, 14, 14);
+            margin: 0;
+            overflow: hidden;
         }
+
         #your-div-id {
             position: fixed;
             color: rgb(255, 244, 39);
@@ -15,83 +19,92 @@
             opacity: 0.8;
             text-shadow: -5px 4px 1px rgb(182, 137, 0);
             border: 6px dashed rgb(255, 206, 58);
-            width: 1280px;
-            right: 200px;
-            bottom: 220px;
-            font-size: 300px;
+            width: 80vw;
+            right: 10vw;
+            bottom: 35vh;
+            font-size: 8vw;
             font-family: "Roboto", sans-serif;
             text-align: center;
         }
+
         #lunar-new-year-image {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 1200px; 
-            height: auto; 
+            width: 80vw;
+            max-width: 1000px;
+            height: auto;
+            opacity: 1;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .snake {
+            position: fixed;
+            width: 15vw;
+            max-width: 250px;
+            height: auto;
             opacity: 1;
         }
 
         #lunar-snake {
-            position: fixed;
-            top: 0px; 
-            left: 10px; 
-            width: 250px; 
-            height: auto; 
-            opacity: 1;
+            top: 5vh; 
+            left: 2vw; 
         }
+
         #yellow-snake {
-            position: fixed;
-            top: -10px;
-            right: 50px;
-            width: 200px;
-            height: auto;
-            opacity: 1;
+            top: 5vh;
+            right: 2vw;
         }
+
         #blue-snake {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            width: 250px;
-            height: auto;
-            opacity: 1;
+            bottom: 5vh;
+            left: 2vw;
         }
+
         #orange-snake {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 250px;
-            height: auto;
-            opacity: 1;
+            bottom: 5vh;
+            right: 2vw;
             z-index: 10;
         }
+
         #red-lantern {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100vw; 
+            width: 100vw;
             height: 100vh;
-            object-fit: cover; 
-            z-index: -1; 
+            object-fit: cover;
+            z-index: -1;
             opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            #your-div-id {
+                width: 90vw;
+                font-size: 6vw;
+                right: 5vw;
+                bottom: 10vh;
+            }
+
+            .snake {
+                width: 20vw;
+                max-width: 180px;
+            }
         }
     </style>
 </head>
 <body>
-    <video autoplay loop muted id="red-lantern" src="Red_Lantern.mp4" type="video/[mp4]"></video>
-    <img id="lunar-new-year-image" src="Firework.gif">
-    <a href="https://reptifiles.com/">
-        <img id="lunar-snake" src="Green_Snake_Red_Hat.png"></a>
-    <a href="https://reptifiles.com/"><img 
-    id="yellow-snake" src="Yellow_Snake_Lion_Hat.png"></a>
-    <a href="https://reptifiles.com/">
-        <img id="blue-snake" src="Blue_Snake.png"></a>
-        <a href="https://reptifiles.com/">
-            <img id="orange-snake" src="Orange_Snake.png"></a>
-    <div id="your-div-id">蛇年大吉
-    </div>
+    <video autoplay loop muted id="red-lantern" src="Assets/Red_Lantern.mp4" type="video/mp4"></video>
+    <img id="lunar-new-year-image" src="Assets/Firework.gif">
+    <a href="love.html"><img id="lunar-snake" class="snake" src="Assets/Green_Snake_Red_Hat.png"></a>
+    <a href="https://reptifiles.com/"><img id="yellow-snake" class="snake" src="Assets/Yellow_Snake_Lion_Hat.png"></a>
+    <a href="https://reptifiles.com/"><img id="blue-snake" class="snake" src="Assets/Blue_Snake.png"></a>
+    <a href="https://reptifiles.com/"><img id="orange-snake" class="snake" src="Assets/Orange_Snake.png"></a>
+    <div id="your-div-id">蛇年大吉</div>
 </body>
 </html>
-<!-- https://www.poetryfoundation.org/poetrymagazine/poems/36453/chinese-new-year-56d219ca15be1 -->
-<!-- https://en.picmix.com/stamp/Fireworks-JitterBugGirl-534341 -->
-<!-- https://www.youtube.com/watch?v=bjc6skPWcKA&ab_channel=mrschenLi -->
