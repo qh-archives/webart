@@ -49,6 +49,7 @@
             max-width: 250px;
             height: auto;
             opacity: 1;
+            transition: transform 0.8s ease;
         }
 
         #lunar-snake {
@@ -64,6 +65,10 @@
         #blue-snake {
             bottom: 5vh;
             left: 2vw;
+        }
+
+        #blue-snake:hover {
+            transform: rotate(360deg);
         }
 
         #orange-snake {
